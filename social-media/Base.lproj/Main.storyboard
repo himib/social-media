@@ -55,34 +55,17 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Irj-E8-2IB">
-                                <rect key="frame" x="-47" y="592" width="469" height="75"/>
+                                <rect key="frame" x="2" y="592" width="371" height="75"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="If you haven't signed in before, an account would be automatically created for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eid-ml-Ak0">
-                                        <rect key="frame" x="53" y="8" width="363" height="59"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="59" id="b1M-1f-uv3"/>
-                                            <constraint firstAttribute="width" constant="363" id="lSL-zc-Mam"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you haven't signed in before, an account would be automatically created for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eid-ml-Ak0">
+                                        <rect key="frame" x="8" y="8" width="363" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.51372549019607838" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="eid-ml-Ak0" firstAttribute="top" secondItem="Irj-E8-2IB" secondAttribute="top" constant="8" id="1i3-la-fTw"/>
-                                    <constraint firstAttribute="trailing" secondItem="eid-ml-Ak0" secondAttribute="trailing" id="6Mk-RZ-yDa"/>
-                                    <constraint firstItem="eid-ml-Ak0" firstAttribute="leading" secondItem="Irj-E8-2IB" secondAttribute="leading" constant="8" id="EEJ-Fu-g2G"/>
-                                    <constraint firstAttribute="bottom" secondItem="eid-ml-Ak0" secondAttribute="bottom" constant="8" id="EPY-L4-rdO"/>
-                                    <constraint firstItem="eid-ml-Ak0" firstAttribute="leading" secondItem="Irj-E8-2IB" secondAttribute="leading" id="Mus-Fk-3WY"/>
-                                    <constraint firstAttribute="trailing" secondItem="eid-ml-Ak0" secondAttribute="trailing" constant="98" id="Nz5-xk-OSy"/>
-                                    <constraint firstItem="eid-ml-Ak0" firstAttribute="leading" secondItem="Irj-E8-2IB" secondAttribute="leading" constant="98" id="VSv-BC-EwA"/>
-                                    <constraint firstAttribute="bottom" secondItem="eid-ml-Ak0" secondAttribute="bottom" constant="8" id="Z5k-P6-HQk"/>
-                                    <constraint firstAttribute="trailing" secondItem="eid-ml-Ak0" secondAttribute="trailing" constant="8" id="htd-5d-KF0"/>
-                                    <constraint firstItem="eid-ml-Ak0" firstAttribute="top" secondItem="Irj-E8-2IB" secondAttribute="top" constant="8" id="taD-Ec-Sb3"/>
-                                    <constraint firstAttribute="bottom" secondItem="eid-ml-Ak0" secondAttribute="bottom" constant="8" id="taD-hh-9nF"/>
-                                    <constraint firstItem="eid-ml-Ak0" firstAttribute="top" secondItem="Irj-E8-2IB" secondAttribute="top" constant="8" id="uu2-DI-lXr"/>
-                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlm-hI-F3q">
                                 <rect key="frame" x="16" y="167" width="343" height="20"/>
