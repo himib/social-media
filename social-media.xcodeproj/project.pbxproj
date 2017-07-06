@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2665EBE8AF78C15909235E36 /* Pods_social_mediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAB53B883FE8961961BFB00 /* Pods_social_mediaUITests.framework */; };
+		4B151A7E1F0E0A4B009523DB /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B151A7D1F0E0A4B009523DB /* FancyView.swift */; };
+		4B151A811F0E0B3C009523DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B151A801F0E0B3C009523DB /* Constants.swift */; };
+		4B151A831F0E0DB2009523DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B151A821F0E0DB2009523DB /* RoundButton.swift */; };
+		4B151A851F0E100A009523DB /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B151A841F0E100A009523DB /* FancyField.swift */; };
+		4B151A871F0E1173009523DB /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B151A861F0E1173009523DB /* FancyButton.swift */; };
 		4B33C2831F0BB61C006CE84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33C2821F0BB61C006CE84B /* AppDelegate.swift */; };
 		4B33C2851F0BB61C006CE84B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33C2841F0BB61C006CE84B /* SignInVC.swift */; };
 		4B33C2881F0BB61C006CE84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B33C2861F0BB61C006CE84B /* Main.storyboard */; };
@@ -42,6 +47,11 @@
 		128E0F462C7F1317A693D20E /* Pods-social-mediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-mediaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social-mediaUITests/Pods-social-mediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2CAB53B883FE8961961BFB00 /* Pods_social_mediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_mediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467FFA353307BDE6BE8B99DB /* Pods-social-mediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-mediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social-mediaTests/Pods-social-mediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B151A7D1F0E0A4B009523DB /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		4B151A801F0E0B3C009523DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4B151A821F0E0DB2009523DB /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		4B151A841F0E100A009523DB /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		4B151A861F0E1173009523DB /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		4B33C27F1F0BB61C006CE84B /* social-media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B33C2821F0BB61C006CE84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B33C2841F0BB61C006CE84B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -101,6 +111,10 @@
 		4B151A7B1F0D6BCE009523DB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B151A7D1F0E0A4B009523DB /* FancyView.swift */,
+				4B151A821F0E0DB2009523DB /* RoundButton.swift */,
+				4B151A841F0E100A009523DB /* FancyField.swift */,
+				4B151A861F0E1173009523DB /* FancyButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -111,6 +125,14 @@
 				4B33C2841F0BB61C006CE84B /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		4B151A7F1F0E0B09009523DB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4B151A801F0E0B3C009523DB /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		4B33C2761F0BB61C006CE84B = {
@@ -138,6 +160,7 @@
 		4B33C2811F0BB61C006CE84B /* social-media */ = {
 			isa = PBXGroup;
 			children = (
+				4B151A7F1F0E0B09009523DB /* Util */,
 				4B151A7A1F0D6BC5009523DB /* Model */,
 				4B151A7C1F0D6BDA009523DB /* Controller */,
 				4B151A7B1F0D6BCE009523DB /* View */,
@@ -477,8 +500,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B151A851F0E100A009523DB /* FancyField.swift in Sources */,
 				4B33C2851F0BB61C006CE84B /* SignInVC.swift in Sources */,
+				4B151A831F0E0DB2009523DB /* RoundButton.swift in Sources */,
+				4B151A871F0E1173009523DB /* FancyButton.swift in Sources */,
 				4B33C2831F0BB61C006CE84B /* AppDelegate.swift in Sources */,
+				4B151A7E1F0E0A4B009523DB /* FancyView.swift in Sources */,
+				4B151A811F0E0B3C009523DB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
